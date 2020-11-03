@@ -8,7 +8,7 @@ int main(void) {
     int height = get_height();
 
     for (int i = 0; i < height; i++) {
-        for (int l = 0; l < height - i; l++) {
+        for (int l = 1; l < height - i; l++) {
             printf(" ");
         }
 
