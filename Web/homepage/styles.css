@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#header {
+  width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://cdn-images-1.medium.com/fit/t/1600/480/1*bkRkeMrlCS8dK2b3S09RHw.jpeg);
+  background-repeat: no-repeat;
+}
+
+#header h1 {
+  font-weight: bold;
+}
+
+#header h1, #header p {
+  font-family: sans-serif, Roboto;
+  color: #FFF;
+}
+
+#header figure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#section figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#section figure img {
+  width: 40%;
+  height: 40%;
+  border-radius: 8px;
+}
+
+#section figure figcaption {
+  max-width: 40vw;
+}
+
+figure p {
+  font-family: Roboto;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 32px;
+}
