@@ -1,0 +1,39 @@
+a {
+  font-size: large;
+  text-decoration: none;
+  padding: 8px;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+figure img {
+  width: 40%;
+  height: 40%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+figure figcaption {
+  max-width: 40vw;
+}
+
+figure h2 {
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+figure p {
+  font-family: Roboto;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 32px;
+}

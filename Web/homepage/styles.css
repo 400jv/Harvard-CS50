@@ -32,32 +32,34 @@ body {
   color: #FFF;
 }
 
-#header figure {
+#section {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
-#section figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#section figure img {
-  width: 40%;
-  height: 40%;
+#section a {
+  font-size: large;
+  text-decoration: none;
+  padding: 8px;
   border-radius: 8px;
+  color: #FFF;
+  margin-bottom: 9px;
 }
 
-#section figure figcaption {
-  max-width: 40vw;
+#section a.reason1:hover,
+#section a.reason2:hover,
+#section a.reason3:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-figure p {
-  font-family: Roboto;
-  text-align: justify;
-  font-size: 18px;
-  line-height: 32px;
+#section a.reason1 {
+  background-color: #008000;
+}
+
+#section a.reason2 {
+  background-color: #121212;
+}
+
+#section a.reason3 {
+  background-color: #DAA520;
 }
