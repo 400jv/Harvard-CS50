@@ -7,7 +7,7 @@
         <title>Trivia!</title>
 
         <script>
-            function status(number) {
+            function checkButtons(number) {
                 const button = document.querySelector(`.button-${number}`);
                 const p = document.querySelector('.status');
 
@@ -19,6 +19,20 @@
 
                 button.className = 'correct';
                 p.innerHTML = 'Correct!';
+            }
+
+            function checkInput() {
+                const input = document.querySelector('#answer');
+                const p = document.querySelector('.status');
+                
+                if (input.value.toUpperCase() !== 'ASIA') {
+                    p.innerHTML = 'Incorrect';
+                    input.style.borderColor = '#ff0000';
+                    return;
+                }
+                
+                p.innerHTML = 'Correct!';
+                input.style.borderColor = '#008000';
             }
         </script>
 
@@ -37,18 +51,19 @@
                 <h3>How many continents are there in the world?</h3>
                 <p class="status"></p>
                 
-                <button class="button-1" onclick="status(1)">There are 2 continents</button>
-                <button class="button-2" onclick="status(2)">There are 6 continents</button>
-                <button class="button-3" onclick="status(3)">There are 4 continents</button>
-                <button class="button-4" onclick="status(4)">There are 196 continents</button>
+                <button class="button-1" onclick="checkButtons(1)">There are 2 continents</button>
+                <button class="button-2" onclick="checkButtons(2)">There are 6 continents</button>
+                <button class="button-3" onclick="checkButtons(3)">There are 4 continents</button>
+                <button class="button-4" onclick="checkButtons(4)">There are 196 continents</button>
             </div>
 
             <div class="section">
                 <h2>Part 2: Free Response</h2>
                 <hr>
+                
                 <h3>Which is the largest continent in the world?</h3>
-                <!-- TODO: Add free response question here -->
-
+                <input id="answer" name="answer" type="text" />
+                <button onclick="checkInput()">Check Answer</button>
             </div>
 
         </div>
