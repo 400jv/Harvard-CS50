@@ -15,7 +15,7 @@ figure {
   justify-content: center;
 }
 
-figure img {
+figure .why_img {
   width: 40%;
   height: 40%;
   border-radius: 8px;
@@ -26,12 +26,12 @@ figure figcaption {
   max-width: 40vw;
 }
 
-figure h2 {
+figure .why_title {
   font-family: Roboto;
   font-weight: bold;
 }
 
-figure p {
+figure .why {
   font-family: Roboto;
   text-align: justify;
   font-size: 18px;

@@ -13,16 +13,33 @@
     </head>
     <body>
         <header id="header">
-            <h1>Hello, word!.</h1>
+            <h1>Hello, World!.</h1>
             <p>This is a simple page, but here I will explain that why I am a programmer.</p>
         </header>
 
         <section id="section">
-            <a class="reason1" href="/componets/reason1.html">Reason 1</a>
-
-            <a class="reason2" href="/componets/reason2.html">Reason 2</a>
-
-            <a class="reason3" href="/componets/reason3.html">Reason 3</a>
+            <a id="reason1" href="/componets/reason1.html" class="btn btn-primary">Reason 1</a>
+            
+            <a id="reason2" href="/componets/reason2.html" class="btn btn-success">Reason 2</a>
+            
+            <a id="reason3" href="/componets/reason3.html" class="btn btn-dark">Reason 3</a>
         </section>
+
+        <section id="section2">
+            <h2>Hello World!, Section.</h2>
+            <p>You already said <span class="count">0</span> Hello, World!.</p>
+
+            <button class="btn btn-dark" onclick="helloWorld()">Say "Hello, World!."</button>
+        </section>
+
+        <script>
+            function helloWorld() {
+                const span = document.querySelector('.count ');
+
+                alert('Hello, World!.');
+
+                span.innerHTML = parseInt(span.innerHTML) + 1;
+            }
+        </script>
     </body>
 </html>
